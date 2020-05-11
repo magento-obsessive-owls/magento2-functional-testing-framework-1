@@ -34,8 +34,6 @@ HTML;
 }
 
 //Patch start
-//$driver = new pcov\Clobber\Driver\PHPUnit6();
-//$coverage = new \SebastianBergmann\CodeCoverage\CodeCoverage($driver);
 $coverage = new \SebastianBergmann\CodeCoverage\CodeCoverage();
 $coverage->filter()->addDirectoryToWhitelist("app/code/Magento/*");
 $coverage->filter()->removeDirectoryFromWhitelist("app/code/Magento/*/Test");
